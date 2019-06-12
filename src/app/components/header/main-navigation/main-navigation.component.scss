@@ -1,0 +1,39 @@
+#nav-bar {
+  box-sizing: border-box;
+  display: flex;
+  list-style: none;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+}
+.bookmark-link {
+  color: black;
+  font-family: sans-serif, Helvetica;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.bookmark-link:hover {
+  color: #8199be;
+}
+.nav-link {
+  background-color: black;
+  color: white;
+  font-family: sans-serif, Helvetica;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 20px 20px;
+  text-decoration: none;
+  transition: .3s;
+}
+.nav-link:hover {
+  background-color: white;
+  color: black;
+}
+.nav-item {
+  padding: 10px 30px;
+}
+.right-nav {
+  margin-left: auto;
+}
