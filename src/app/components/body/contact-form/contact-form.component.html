@@ -1,0 +1,22 @@
+<form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" id="contact-form">
+  <div class="contact-inputs flex justify-content__center">
+    <div>
+      <label for="name">Name (Required)</label>
+      <input [(ngModel)]="name" name="name">
+    </div>
+    <div>
+      <label for="email">Email (Required)</label>
+      <input [(ngModel)]="email" name="email">
+    </div>
+    <div>
+      <label for="phone">Phone</label>
+      <input [(ngModel)]="phone" name="phone">
+    </div>
+  </div>
+  <div class="flex justify-content__center">
+    <label for="message">Message</label>
+  </div>
+  <div class="flex justify-content__center">
+    <textarea [(ngModel)]="message" name="message"></textarea>
+  </div>  
+</form>

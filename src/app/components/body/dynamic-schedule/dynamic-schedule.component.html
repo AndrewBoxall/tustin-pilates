@@ -1,0 +1,39 @@
+<div id="schedule-page">
+    <h2 class="page-title">CLASS SCHEDULE</h2>
+    <div id="class-schedule">
+        <ol id="schedule-xaxis__days">
+            <li>Monday</li>
+            <li>Tuesday</li>
+            <li>Wednesday</li>
+            <li>Thursday</li>
+            <li>Friday</li>
+            <li>Saturday</li>
+            <li>Sunday</li>
+        </ol>
+        <ol id="schedule-yaxis__hours">
+            <li id="600am"><div>6 am</div></li>
+            <li id="700am">7 am</li>
+            <li id="800am">8 am</li>
+            <li id="9am">9 am</li>
+            <li id="10am">10 am</li>
+            <li id="11am">11 am</li>
+            <li id="12pm">12 pm</li>
+            <li id="1pm">1 pm</li>
+            <li id="2pm">2 pm</li>
+            <li id="3pm">3 pm</li>
+            <li id="4pm">4 pm</li>
+            <li id="5pm">5 pm</li>
+            <li id="6pm">6 pm</li>
+            <li id="7pm">7 pm</li>
+            <li id="8pm">8 pm</li>
+        </ol>
+        <ul id="classes">
+            <li id="{{'hero'+i}}" class="{{''+hero.Apptype}}" *ngFor="let hero of heroes; let i = index">
+                <h4>{{ hero.Apptype }}</h4>
+                <p>{{ hero.Instructor }}</p>
+                <p>{{ hero.Start }} - {{ hero.Finish }}</p>
+                {{positionItem(hero, i)}}
+            </li>
+        </ul>
+    </div>
+</div>

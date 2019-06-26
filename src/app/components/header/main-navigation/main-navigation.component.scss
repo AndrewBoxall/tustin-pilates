@@ -1,39 +1,84 @@
 #nav-bar {
+  align-items: center;
   box-sizing: border-box;
   display: flex;
   list-style: none;
-  position: absolute;
-  top: 0;
+  margin: 0px;
   z-index: 3;
   width: 100%;
+  position: fixed;
+  top: 0px;
+  transition: 0.5s;
 }
-.bookmark-link {
-  color: black;
-  font-family: sans-serif, Helvetica;
-  font-size: 16px;
-  font-weight: bold;
-  text-decoration: none;
+.onscreen {
+  position: absolute;
+  top: 0px;
+  background-color: rgba(0,0,0,0.4);
+  padding: 20px 200px;
+  transition: top 1s;
 }
-.bookmark-link:hover {
-  color: #8199be;
+.fixed {
+  position: fixed;
+  top: 0px;
+  transition-delay: 1s;
 }
-.nav-link {
-  background-color: black;
+.offscreen {
+  top: 0px;
+  background-color: rgba(0,0,0,0.7);
+  padding: 5px 200px;
+  transition: top 1s;
+}
+a {
   color: white;
-  font-family: sans-serif, Helvetica;
+  font-family: 'Dosis', sans-serif, Helvetica;
   font-size: 16px;
-  font-weight: bold;
-  padding: 20px 20px;
   text-decoration: none;
-  transition: .3s;
 }
-.nav-link:hover {
+.hover-border {
   background-color: white;
-  color: black;
+  height: 1px;
+  width: 0px;
+  transition: 0.5s;
 }
-.nav-item {
+a:hover + .hover-border {
+  width: 100%;
+}
+#nav-logo {
+  max-width: 150px;
+}
+li {
   padding: 10px 30px;
 }
 .right-nav {
   margin-left: auto;
+}
+@media screen and (max-width: 750px){
+  .onscreen {
+    padding: 20px 5px;
+  }
+  .offscreen {
+    padding: 0px 5px;
+  }
+  a {
+    margin: 0;
+    font-size: 10px;
+  }
+  li {
+    margin: 0;
+    padding: 0px 5px;
+    text-align: center;
+    width: 100%;
+  }
+  
+}
+@media screen and (min-width: 750px) and (max-width: 1250px){
+  .onscreen {
+    padding: 20px 20px;
+  }
+  .offscreen {
+    padding: 0px 20px;
+  }
+  li {
+    padding: 10px 1%;
+  }
 }

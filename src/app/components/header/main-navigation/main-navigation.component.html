@@ -1,37 +1,60 @@
-<ul id="nav-bar">
+<ul id="nav-bar" class="onscreen">
   <li class="nav-item">
       <nav>
-        <a href="/" class="bookmark-link">HOME</a>
+        <a href="/" class="bookmark-link">
+          <picture>
+            
+            <source media="(min-width: 750px)" srcset="assets/img/tustinpilates-logo.png">
+            <source media="(min-width: 0px)" srcset="assets/img/tustinpilates-logo-smallest.png">
+            <img 
+              id="nav-logo" 
+              src="assets/img/tustinpilates-logo.png" 
+              alt="background header carousel"
+            >
+          </picture>
+        </a>
       </nav>
     </li>
-  <li class="nav-item">
+  <li class="right-nav">
     <nav>
-      <a href="#About" class="bookmark-link">ABOUT</a>
+      <a href="/" class="bookmark-link">HOME</a>
+      <div class="hover-border"></div>
     </nav>
   </li>
   <li class="nav-item">
     <nav>
-      <a href="#Classes" class="bookmark-link">CLASSES</a>
+      <a href="/about" class="bookmark-link">ABOUT</a>
+      <div class="hover-border"></div>
+    </nav>
+  </li>
+  <li class="nav-item">
+    <nav>
+      <a href="/classes" class="bookmark-link">CLASSES</a>
+      <div class="hover-border"></div>
     </nav>
   </li>
   <li class="nav-item">
     <nav> 
-      <a href="#schedule-section" class="bookmark-link">SCHEDULE</a>
+      <a href="/schedule" class="bookmark-link">SCHEDULE</a>
+      <div class="hover-border"></div>
     </nav>
   </li>
   <li class="nav-item">
     <nav>
-      <a href="#Testimonials" class="bookmark-link">TESTIMONIALS</a>
+      <a href="/testimonials" class="bookmark-link">TESTIMONIALS</a>
+      <div class="hover-border"></div>
     </nav>
   </li>
   <li class="nav-item">
     <nav>
       <a href="/contact" class="bookmark-link">CONTACT</a>
+      <div class="hover-border"></div>
     </nav>
   </li>
-  <li class="nav-item right-nav">
+  <li class="nav-item">
     <nav>
-      <a href="#Contact" class="nav-link">GET STARTED</a>
+      <a href="/bookings" class="bookmark-link">BOOK A SESSION</a>
+      <div class="hover-border"></div>
     </nav>
   </li>
-</ul>
+</ul> 

@@ -1,0 +1,65 @@
+#class-schedule {
+  width: 100%;
+  padding: 0 20px;
+  position: relative;
+}
+#classes {
+  font-family: 'Gothic A1', arial;
+  list-style-type: none;
+  h4 {
+      margin: 0;
+  }
+  p {
+      font-size: 12px;
+      margin: 5px 0;
+  }
+  p:nth-child(odd) {
+      font-size: 12px;
+      font-weight: bold;
+  }
+  li {
+      text-align: center;
+      padding: 20px 0;
+      position: absolute;
+      width: 150px;
+      height: 100px;
+  }
+  li.Dance {
+      background-color: rgb(195, 209, 255);
+  }
+  li.Pilates {
+      background-color: rgb(255, 214, 255);
+  }
+  li.Gym {
+      background-color: rgb(210, 247, 203);
+  }
+}
+#schedule-xaxis__days {
+  margin-left: 140px;
+  font-family: 'Gothic A1', arial;
+  list-style-type: none;
+  width: 90%;
+  li {
+      border-bottom: 1px solid black;
+      float: left;
+      padding: 10px 40px;
+      width: 150px;
+  }
+}
+#schedule-yaxis__hours {
+  font-family: 'Gothic A1', arial;
+  font-size: 12px;
+  list-style-type: none;
+  clear: left;
+  li {
+      margin: 0 5px;
+      padding: 40px 0px;
+      position: relative;
+      width: 135px;
+      height: 100px;
+      text-align: center;
+  }
+  :nth-child(even) {
+      background-color: rgb(245, 241, 245);
+  }
+}

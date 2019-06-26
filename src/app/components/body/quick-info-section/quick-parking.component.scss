@@ -1,0 +1,36 @@
+#quick-parking {
+    width: 100%;
+    margin: 0 20px;
+    button {
+        background-color: rgba(255,255,255,0);
+        border: 2px solid white;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+        font-family: 'Dosis';
+        padding: 10px;
+        margin-left: 50px;
+    }
+    h2 {
+        color: white;
+        font-family: 'Dosis';
+        font-weight: normal;
+        font-size: 30px;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+    p {
+        color: white;
+        font-family: 'Gothic A1', Arial;
+        font-size: 14px;
+        margin-left: 50px;
+    }
+    i {
+        color: white;
+        font-size: 40px;
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width: 1000px) {
+
+}
