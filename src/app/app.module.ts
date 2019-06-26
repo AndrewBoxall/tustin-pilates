@@ -2,33 +2,35 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
+import { AboutPageModule } from './pages/about-page/about-page.module';
+import { BookingsPageModule } from './pages/bookings-page/bookings-page.module';
+import { ClassesPageModule } from './pages/classes-page/classes-page.module';
+import { ContactPageModule } from './pages/contact-page/contact-page.module';
+import { HomePageModule } from './pages/home-page/home-page.module';
+import { SchedulePageModule } from './pages/schedule-page/schedule-page.module';
+import { TestimonialsPageModule } from './pages/testimonials-page/testimonials-page.module';
+
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header/header.component';
 import { MainNavigationComponent } from './components/header/main-navigation/main-navigation.component';
-import { HeaderLandingComponent } from './components/header/header-landing/header-landing.component';
-import { ClassTypesComponent } from './components/body/class-types/class-types.component';
-import { ClassScheduleComponent } from './components/body/class-schedule/class-schedule.component';
-import { TestimonalsSectionComponent } from './components/body/testimonals-section/testimonals-section.component';
 import { FooterSectionComponent } from './components/footer/footer-section/footer-section.component';
-import { ContactPageComponent } from './pages/contact-page/contact-page.component';
-import { HomePageComponent } from './pages/home-page/home-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     MainNavigationComponent,
-    HeaderLandingComponent,
-    ClassTypesComponent,
-    ClassScheduleComponent,
-    TestimonalsSectionComponent,
-    FooterSectionComponent,
-    ContactPageComponent,
-    HomePageComponent
+    FooterSectionComponent
   ],
+
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AboutPageModule,
+    BookingsPageModule,
+    ClassesPageModule,
+    ContactPageModule,
+    HomePageModule,
+    SchedulePageModule,
+    TestimonialsPageModule    
   ],
   providers: [],
   bootstrap: [AppComponent]
