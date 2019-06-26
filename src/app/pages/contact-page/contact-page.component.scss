@@ -1,3 +1,12 @@
 #contact-page {
-    margin: 0;
+    p {
+        font-family: 'Dosis', arial;
+        text-align: center;
+        margin: 20px 0;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .details-and-map {
+        flex-wrap: wrap;
+    }
 }

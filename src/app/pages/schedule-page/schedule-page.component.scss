@@ -1,0 +1,13 @@
+#schedule-table {
+    font-family: 'Gothic A1', arial;
+    margin: 0 10%;
+    tr:nth-child(even) {
+        background-color: rgb(245, 241, 245);
+    }
+    h3 {
+        font-size: 12px;
+    }
+    p {
+        font-size: 12px;
+    }
+}

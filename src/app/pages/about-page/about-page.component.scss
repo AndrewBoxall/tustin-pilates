@@ -1,0 +1,115 @@
+$defaultFont: 'Dosis', arial;
+
+#about-page {
+    font-family: $defaultFont;
+    #about-introduction {
+        font-size: 18px;
+        text-align: center;
+        width: 100%;
+        padding: 0 5%;
+    }
+    h3 {
+        font-size: 26px;
+        font-weight: normal;
+        letter-spacing: 2px;
+    }
+    h4 {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    i {
+        padding: 10px;
+        font-size: 40px;
+    }
+    p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+}
+.studio-picture-gallery {
+    display: flex;
+    padding: 50px 20px;
+}
+.studio-picture {
+    background-color: black;
+    position: relative;
+    margin: 10px;
+    img {
+        width: 100%;    
+    }
+    .hover-text {
+        color: white;
+        display: none;
+        font-family: 'Dosis', arial;
+        font-size: 28px;
+        position: absolute;
+        top: 45%;
+        width: 100%;
+        text-align: center;
+        margin: 0; 
+    }
+}
+.studio-picture:hover > .hover-text {
+    display: block;
+    z-index: 2;
+}
+.studio-picture:hover > img {
+    opacity: 0.5;
+}
+
+.help-grid__row {
+    align-items: flex-start;
+    display: flex;
+}
+.help-grid__col {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    > p {
+        padding: 0 10px;
+        margin: 0;
+        width: 100%;
+    }
+}
+.instructor-picture {
+    display: flex;
+    padding: 10px 30px;
+    img {
+        width: 200px;
+        height: auto;
+        margin: 20px 10px 20px 0px;
+    }
+}
+.section {
+    background-color: rgb(245, 241, 245);
+    padding: 50px 2%;
+}
+
+@media screen and (max-width: 750px){
+    #about-page {
+        #about-introduction {
+            font-size: 14px;
+            padding: 0 5%;
+        }
+    }
+    .studio-picture-gallery {
+        flex-wrap: wrap;
+        .studio-picture {
+            margin: 10px 0;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    .instructor-picture {
+        flex-wrap: wrap;
+        margin: 0 10px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .help-grid__row {
+        flex-wrap: wrap;
+    }
+}
