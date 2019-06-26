@@ -1,12 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+$titleFont: 'Dosis', arial; 
+$sectionFont: 'Dosis', arial; 
+$defaultFont: 'Dosis', arial; 
+
 body {
     margin: 0;
+    overflow-x: hidden;
+}
+.align-items__center {
+    align-items: center;
+}
+.align-items__fstart {
+    align-items: flex-start;
+}
+.page-title {
+    font-family: $titleFont; 
+    letter-spacing: 3px;
+    margin: 150px 0 50px 0;
+    text-align: center;
+    width: 100%;
+}
+.section-title {
+    font-family: $titleFont;
+    letter-spacing: 2px;
+    margin: 50px 0;
+    text-align: center;
+    width: 100%;
 }
 .flex {
     display: flex;
 }
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
 .justify-content__center {
     justify-content: center;
+}
+.justify-content__evenly {
+    justify-content: space-evenly;
+}
+.margin__auto {
+    margin: auto;
+}
+.text-align__center {
+    text-align: center;
+}
+* {
+    box-sizing: border-box;
 }
 @media only screen and (min-width: 1200px) {
     .col-1 {width: 8.33%;}
