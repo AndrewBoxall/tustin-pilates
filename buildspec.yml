@@ -14,4 +14,4 @@ phases:
   post_build:
     commands:
       - echo Executing post build
-      - aws s3 sync ./build $S3_BUCKET
+      - aws s3 sync ./build $S3_BUCKET --acl 'public-read'
