@@ -14,4 +14,4 @@ phases:
   post_build:
     commands:
       - echo Executing post build
-      - aws s3 sync s3://tustin-pilates --acl 'public-read' --delete      
+      - aws s3 sync ./dist/tustin-pilates-angular s3://tustin-pilates --acl 'public-read' --delete      
